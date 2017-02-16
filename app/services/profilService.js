@@ -10,8 +10,6 @@ appchat.factory('profilService', function($http) {
                 .then(function(status) {
 
                 });
-
-
         }
     };
 
