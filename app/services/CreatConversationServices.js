@@ -1,9 +1,9 @@
-app.factory('CreatConversationService', function($http, $q){
+app.factory('CreatConversationService', function($http, $q, $id, $user_id_recipient, $user_id_sender){
   var API : 'http://preprod.prokonect.fr/';
 
   var conversation = {
     response : false,
-    GetAll: function (limit) {
+    GetAll: function (id) {
       var deferred = $q.defer();
       var url : API + '/Conversation/';
 
@@ -16,7 +16,7 @@ app.factory('CreatConversationService', function($http, $q){
     },
     GetById: function(id, user_id_recipient, user_id_sender ) {
       var deferred = $q.defer();
-      var url : API + '/Conversation/view' + id;
+      var url : API + '/Conversation/view' + id + user_id_recipient + user_id_sender;
 
       $http.get(url)
       .then(function(data, status) {
