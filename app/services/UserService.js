@@ -12,7 +12,7 @@ app.factory('AnnonceService', function($http, $q) {
             var deferred = $q.defer();
             var url = API + "/users/create/" + limit;
 
-            $http.get(url)
+            $http.post(url)
                 .then(function(data, status) {
                     service.response = data;
                     deferred.resolve(service.response);
