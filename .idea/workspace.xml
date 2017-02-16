@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c9b0c54-1fd8-4c7a-98fd-99b9f0edf50c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/user/UserIsLogged.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/UserController.js" afterPath="$PROJECT_DIR$/app/controllers/user/UserController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/services/UserService.js" afterPath="$PROJECT_DIR$/app/services/user/UserService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/image/fond_music.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/image/footer.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/image/image1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/image/image2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/CreateConversationController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/loginController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/profilController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/CreateConversationServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/profilService.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/CreatConversationController/CreatConversationController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/services/CreatConversationService/CreatConversationServices.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/image/jose icon.jpg" afterPath="$PROJECT_DIR$/app/assets/image/jose_icon.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.routes.js" afterPath="$PROJECT_DIR$/app/app.routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/style.css" afterPath="$PROJECT_DIR$/app/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directives/header.html" afterPath="$PROJECT_DIR$/app/views/directives/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profil.html" afterPath="$PROJECT_DIR$/app/views/profil.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,11 +36,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -68,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.routes.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.routes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app.routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="208">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,12 +164,12 @@
         <option value="$PROJECT_DIR$/app/controllers/UserController.js" />
         <option value="$PROJECT_DIR$/app/services/LoginService.js" />
         <option value="$PROJECT_DIR$/app/controllers/LoginController.js" />
-        <option value="$PROJECT_DIR$/app/app.routes.js" />
         <option value="$PROJECT_DIR$/app/views/login.html" />
         <option value="$PROJECT_DIR$/app/services/user/UserService.js" />
         <option value="$PROJECT_DIR$/app/controllers/user/UserController.js" />
         <option value="$PROJECT_DIR$/app/controllers/user/UserIsLogged.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/app.routes.js" />
       </list>
     </option>
   </component>
@@ -255,10 +265,6 @@
               <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -277,24 +283,6 @@
               <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -315,6 +303,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -419,12 +429,12 @@
       <workItem from="1487162454369" duration="16000" />
       <workItem from="1487162483951" duration="1417000" />
       <workItem from="1487166175047" duration="93000" />
-      <workItem from="1487234429193" duration="12785000" />
+      <workItem from="1487234429193" duration="12879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16765000" />
+    <option name="totallyTimeSpent" value="16859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
@@ -614,20 +624,20 @@
         <state relative-caret-position="1078">
           <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
           <folding>
-            <marker date="1487239183211" expanded="true" signature="273:1382" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="297:1347" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="338:1100" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="383:729" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="420:706" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="444:683" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="775:1081" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="811:1057" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="835:1034" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="1141:1341" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="1173:1318" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="1194:1237" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="1220:1237" ph="..." />
-            <marker date="1487239183211" expanded="true" signature="1240:1298" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="273:1382" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="297:1347" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="338:1100" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="383:729" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="420:706" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="444:683" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="775:1081" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="811:1057" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="835:1034" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="1141:1341" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="1173:1318" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="1194:1237" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="1220:1237" ph="..." />
+            <marker date="1487254179681" expanded="true" signature="1240:1298" ph="..." />
           </folding>
         </state>
       </provider>
@@ -664,7 +674,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/loginController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
@@ -684,14 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -747,7 +749,15 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
