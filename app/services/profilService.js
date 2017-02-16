@@ -4,7 +4,7 @@ appchat.factory('profilService', function($http) {
     var service = {
 
         profil: function(user) {
-            var url = API + "/conversations/create/" +user.id.recipient+ "/" +user.id.sender;
+            var url = API + "users/view" +id;
 
             $http.get(url)
                 .then(function(status) {
