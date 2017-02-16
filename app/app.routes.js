@@ -12,5 +12,9 @@ appchat.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/profil.html',
             controller: 'SignupController'
         })
+        .when('/chat/:id', {
+            templateUrl: 'app/views/chat.html',
+            controller: 'chatController'
+        })
         .otherwise({redirectTo : '/'})
 });
