@@ -1,30 +1,20 @@
-app.factory('CreatConversationService', function($http, $q, $id, $user_id_recipient, $user_id_sender){
-  var API : 'http://preprod.prokonect.fr';
+app.factory('CreatConversationService', function($http){
+  var API : 'http://preprod.prokonect.fr/api';
 
-  var conversation = {
-    response : false,
-    GetAll: function (id) {
-      var deferred = $q.defer();
-      var url : API + '/Conversation/';
+    var service = {
 
-      $http.get(url).then(function(data, status){
-        conversation.response = data;
-        deferred.resolve(service.response);
-      });
+        createConversation: function(CreatConversation) {
+            var url = API + "/conversations/create/" +user.id.recipient+ "/" +user.id.sender;
 
-      return defered.promise;
-    },
-    GetById: function(id, user_id_recipient, user_id_sender ) {
-      var deferred = $q.defer();
-      var url : API + '/Conversation/view' + id + user_id_recipient + user_id_sender;
+            $http.get(url)
+                .then(function(status) {
 
-      $http.get(url)
-      .then(function(data, status) {
-        service.response = data;
-        deferred.resolve(service.response);
-      });
-      return deferred.promise;
-    }
-  }
-  return conversation;
+                });
+
+
+        }
+    };
+
+    return service;
+
 });
