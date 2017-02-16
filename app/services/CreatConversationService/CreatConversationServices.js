@@ -1,5 +1,5 @@
 app.factory('CreatConversationService', function($http, $q, $id, $user_id_recipient, $user_id_sender){
-  var API : 'http://preprod.prokonect.fr/';
+  var API : 'http://preprod.prokonect.fr';
 
   var conversation = {
     response : false,

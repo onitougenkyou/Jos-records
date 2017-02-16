@@ -5,7 +5,6 @@ body {
 
 div.logo {
 	padding: 25px;
-	background: #1d2b4d;
 	text-align: center;
 }
 
@@ -18,8 +17,12 @@ HEADER
 ----------------------------------------*/
 .block-header .title {
 	background: #16b84e;
-	color:;
+	color: black;
 }
+
+
+
+
 
 
 

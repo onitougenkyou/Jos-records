@@ -3,8 +3,8 @@ app.controller('chatController', function($scope, chatService,$routeParams) {
   console.log(id);
   setInterval(function(){
     AnnonceService.RefreshById(id).then(function(response) {
-      $scope.annonce = response.data;
-      console.log(response.data); 
+      $scope.messages = response.data;
+      console.log(response.data);
     }
 
   }, 1000);
