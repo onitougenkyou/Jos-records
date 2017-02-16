@@ -1,10 +1,32 @@
+/* ------------------------------------------------
+Custom reset
+-------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, ul, ol {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+
 body {
+	background-image: url(../image/fond_music.jpg);
 	padding: 0;
 	margin: 0;
 }
 
 div.logo {
-	padding: 25px;
 	text-align: center;
 }
 
@@ -18,34 +40,52 @@ HEADER
 .block-header .title {
 	background: #16b84e;
 	color: black;
+	font: bold 5rem comic;
 }
 
+.block-header .title .nom {
+	text-transform: uppercase;
+	font: bold 7rem comic;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /*----------------------------------------
 NAVIGATION
 ----------------------------------------*/
 
-
-
-
-
-
+.block-nav .menu-nav {
+	background: black;
+}
 
 
 
 /*----------------------------------------
 MAIN
 ----------------------------------------*/
+
+.block-article {
+	margin-top: 100px;
+	
+}
+
+.block-article1 .article1-title {
+	font: bold 3rem comic;
+}
+
+.block-article .txt1 {
+	font: bold 1 comic;
+	margin: 20px;
+	padding: 10px;
+	background: white;
+	color: grey;
+}
+
+.block-article .txt2 {
+	margin: 20px;
+	padding: 10px;
+	background: white;
+	color: grey;
+}
+
+
+
