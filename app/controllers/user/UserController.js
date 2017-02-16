@@ -18,6 +18,7 @@ appchat.controller('UserController', function($scope, $routeParams, $window, Use
             };
             console.log(user);
             UserService.createUser(user);
+            $window.location = "#!/signup_success";
         };
 
             $scope.login = function () {
@@ -29,7 +30,7 @@ appchat.controller('UserController', function($scope, $routeParams, $window, Use
                UserService.loginUser(userlogin).then(function (response) {
                    if(response.data.success){
                        localStorage.setItem("user",JSON.stringify(response.data));
-                       $window.location = "#!/";
+                       $window.location = "#!/login_success";
                    }
                    else {
 

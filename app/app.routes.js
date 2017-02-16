@@ -18,8 +18,7 @@ appchat.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/profil.html'
 
         })
-
-
+        
         .when('/CreatConversationView', {
           templateUrl: 'app/views/CreatConversation/CreatConversationView.html',
           controller: 'CreatConversationController'
@@ -30,6 +29,13 @@ appchat.config(function($routeProvider, $locationProvider) {
           controller: 'conversationController'
         })
 
+        .when('/signup_success', {
+            templateUrl: 'app/views/signup_success.html'
+        })
+
+        .when('/login_success', {
+            templateUrl: 'app/views/login_success.html'
+        })
 
         .when('/profil/:id', {
             templateUrl: 'app/views/profil.html',
