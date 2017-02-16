@@ -11,7 +11,7 @@ appchat.factory('UserService', function($http) {
         createUser: function(user) {
             var url = API + "/users/create/" +user.email+ "/" +user.nickname+ "/" +user.password+ "/" +user.firstname+ "/" +user.lastname;
 
-            $http.post(url)
+            $http.get(url)
                 .then(function(status) {
 
                 });

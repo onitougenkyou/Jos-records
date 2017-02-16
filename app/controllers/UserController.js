@@ -4,7 +4,7 @@
 
 appchat.controller('UserController', function($scope, $routeParams, UserService) {
 
-        function signup() {
+        $scope.signup = function () {
             var user = {
                 mail: $scope.mail,
                 password: $scope.password,
@@ -12,6 +12,7 @@ appchat.controller('UserController', function($scope, $routeParams, UserService)
                 lastname: $scope.lastname,
                 firstname: $scope.firstname
             };
+            console.log(user);
             UserService.createUser(user);
         }
     }
