@@ -1,9 +1,9 @@
 appchat.controller('CreateConversationController', function($scope,$routeParams, CreateConversationService) {
 
-	$scope.f = function(id){
+	$scope.newConversation = function(id){
 		var user = {
 			recipient :{
-				id:id 
+				id:id
 			},
 			sender : {
 				id : 1
