@@ -9,7 +9,7 @@ appchat.controller('profilController', function($scope,$routeParams, CreateConve
 
 
 			var profil = {
-				id: $scope.id
+				id: $scope.idl 
 			}
 		})
 	}
@@ -28,4 +28,3 @@ appchat.controller('profilController', function($scope,$routeParams, CreateConve
 
 
 });
-
