@@ -1,0 +1,4 @@
+/api/conversations/{userId}
+/api/users/login/{email}/{password}
+/api/users/create/{email}/{pseudo}/{password}/{firstName}/{lastName}
+/api/conversations/create/{user_id_recipient}/{user_id_sender}
