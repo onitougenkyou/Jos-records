@@ -3,7 +3,7 @@ appchat.controller('conversationController', function($scope, conversationServic
   console.log(id);
 
     conversationService.getconversation(id).then(function(response) {
-      $scope.conversation = response.data;
+      $scope.messages = response.data;
       console.log(response.data);
     });
 });
