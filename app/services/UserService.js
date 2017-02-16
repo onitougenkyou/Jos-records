@@ -2,25 +2,23 @@
  * Created by davinazz on 15/02/2017.
  */
 
-app.factory('AnnonceService', function($http, $q) {
+appchat.factory('UserService', function($http) {
 
     var API = 'http://preprod.prokonect.fr/api';
 
     var service = {
-        response : false,
-        GetAll: function(limit) {
-            var deferred = $q.defer();
-            var url = API + "/users/create/" + limit;
+
+        createUser: function(user) {
+            var url = API + "/users/create/" +user.email+ "/" +user.nickname+ "/" +user.password+ "/" +user.firstname+ "/" +user.lastname;
 
             $http.post(url)
-                .then(function(data, status) {
-                    service.response = data;
-                    deferred.resolve(service.response);
+                .then(function(status) {
+
                 });
 
-            return deferred.promise;
+
         }
-    }
+    };
 
     return service;
 
