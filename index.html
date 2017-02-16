@@ -10,7 +10,7 @@
 
 	</head>
 
-	<body ng-app="appchat">
+	<body ng-app="appchat" ng-controller="UserisLogged">
 
 		<!-- appele header -->
 		<ng-header></ng-header>
@@ -28,8 +28,10 @@
 		<script src="app/app.routes.js"></script>
 		<script src="app/app.directives.js"></script>
 
-		<script src="app/controllers/UserController.js"></script>
-		<script src="app/services/UserService.js"></script>
+		<script src="app/controllers/user/UserController.js"></script>
+		<script src="app/services/user/UserService.js"></script>
+		<script src="app/controllers/user/UserIsLogged.js"></script>
+
 
 	</body>
 </html>
