@@ -37,7 +37,7 @@ appchat.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/login_success.html'
         })
 
-        .when('/profilService/:id', {
+        .when('/profil/:id', {
             templateUrl: 'app/views/profil.html',
             controller: 'profilController'
         })
