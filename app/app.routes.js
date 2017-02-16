@@ -12,5 +12,8 @@ appchat.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/profil.html',
             controller: 'SignupController'
         })
+
+        .when('/CreatConversationView', {templateUrl: 'app/views/CreatConversation/CreatConversationView.html', controller: 'CreatConversationController'})
+
         .otherwise({redirectTo : '/'})
 });
