@@ -14,7 +14,7 @@ app.factory('CreatConversationService', function($http, $q){
 
       return defered.promise;
     },
-    GetById: function(id) {
+    GetById: function(id, user_id_recipient, user_id_sender ) {
       var deferred = $q.defer();
       var url : API + '/Conversation/view' + id;
 
