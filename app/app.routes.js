@@ -44,7 +44,7 @@ appchat.config(function($routeProvider, $locationProvider) {
 
         .when('/conversation/messages/:id', {
           templateUrl: 'app/views/Cconversation/createView.html',
-          controller : 'conversationController'
+          controller : 'viewConversationController'
         })
 
         .otherwise({redirectTo : '/'})
