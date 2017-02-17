@@ -1,34 +1,18 @@
-/* ------------------------------------------------
-Custom reset
--------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, ul, ol {
-  padding: 0;
-  margin: 0;
-  font-weight: normal;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-figure {
-  margin: 0;
-}
 
 
-body {k
-	background-image: url(../image/fond_music.jpg);
-	background-attachment:fixed;
-	background-repeat:no-repeat;
+@import url('https://fonts.googleapis.com/css?family=Bahiana');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+
+body {
 	padding: 0;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 div.logo {
+	padding: 25px;
 	text-align: center;
 }
 
@@ -36,70 +20,155 @@ img {
 	max-width: 100px;
 }
 
+
 /*----------------------------------------
 HEADER
 ----------------------------------------*/
-.block-header .title {
+.block-header .logo {
 	background: #16b84e;
+	font: 3rem  Bahiana, Arial ,sans-serif;
+  	text-transform: uppercase;
+  	text-align: center;
+
 	color: black;
-	font: bold 5rem comic;
+	padding: 0.1em;
+}
+.block-header .title{
+	line-height: 12rem;
+	
+}
+.block-header .title p1 {
+	font: 1.3em  Bahiana, Arial ,sans-serif;
+	text-decoration: underline ;
+	line-height: 12rem;
+}
+.block-header .img {
+	width: 200%;
+	position: relative;
+	top: 29px;
 }
 
-.block-header .title .nom {
-	text-transform: uppercase;
-	font: bold 7rem comic;
-
+.block-header span {
+	margin-left: 5px;
+	padding-top: 16px;
 }
+
+.block-header span p2 {
+	background-color: yellow;
+	font-size: 0.8em;
+	line-height: 12rem;
+}
+.block-header .title, .img {
+	display:inline;
+}
+
+.block-header .title .img {
+
+max-width:150px;
+animation: App-logo-spin infinite 1s linear;
+}
+
+
+/*--------------------------------------
+ANIMATION HEADER
+---------------------------------------*/
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
 
 /*----------------------------------------
 NAVIGATION
 ----------------------------------------*/
+.block-header .navigation {
+	background: black ;
+	
 
-.block-nav .menu-nav {
-	background: black;
 }
 
-/*----------------------------------------
-BUTTON
-----------------------------------------*/
-
-.block-button {
-	text-align: right;
-	color: green;
+.block-header .navigation a {
+	color: white ;
+	text-decoration: none;
 }
-.block-button button {
-	border: none;
-	margin: 5px;
-	padding: 5px;
+
+.navigation {
+	padding: 10px;
+}
+.navigation li {
+	display: inline-block;
+	font: 3rem  Rubik, Arial ,sans-serif;
+	text-transform: uppercase;
+	
+	margin-right: 5em;
+	margin-left: 5em;
+	border-top: white;
+	border-bottom: white;
+
+}
+.navigation li:hover{
+	font-size: 2rem;
+	box-sizing: border-box;
+	
+}
+
+
+.topbar {
+	background:#16b84e;
+	padding: 15px;
+}
+
+div.topbar div.container ul li {
+	float: left;
+	list-style-type: none;
+}
+div.topbar div.container ul li :first-child{
+	margin-right: 25px;
+	
+}
+
+div.topbar div.container ul li a {
+	font: 2rem  Rubik, Arial ,sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:white;
+}
+
+div.topbar div.container ul li a:active {
+	color: yellow;
+}
+
+div.clear {
+	clear: both;
+}
+
+div.pull-right {
+	float: right;
+}
+
+div.pull-left {
+	float: left;
 }
 
 /*----------------------------------------
 MAIN
 ----------------------------------------*/
-
-.block-article {
-	margin-top: 100px;
-	
-}
-
-.block-article1 .article1-title {
-	font: bold 3rem comic;
-}
-
-.block-article .txt1 {
-	font: bold 1 comic;
-	margin: 20px;
-	padding: 10px;
-	background: white;
-	color: grey;
-}
-
-.block-article .txt2 {
-	margin: 20px;
-	padding: 10px;
-	background: white;
-	color: grey;
+body {
+	background: #16b84e;
+	font: 2rem  Rubik, Arial ,sans-serif;
+	text-align: center;
 }
 
 
 
+
+/*---------------------------------------
+FOOTER
+----------------------------------------*/
+
+.block-footer {
+	background: #16b84e;
+}
