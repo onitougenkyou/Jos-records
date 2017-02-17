@@ -38,18 +38,28 @@
 			<div class="row">
 				<div ng-view=""></div>
 					<div class="main">
-					     <div class="col-xs-12">
+					    <div class="col-xs-12">
 					          		<div class="text">
 						                <p>
 						                Partagez vos musiques
 						                </p>
-						                <img class="img" src="app/assets/image/Sans titre-1.jpg">
-						          </div>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
+						              	</div>
+						
+						        	<div> 
+      									<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/153810886&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    								</div>
+    								<div>
+    								<img class="img" src="app/assets/image/Sans titre-1.png">
+    								</div>
+						</div>
+					</div>
+			</div>
 		</div>
+		
+
+
+
+
 
 
 		<!-- appele footer -->
@@ -84,7 +94,9 @@
 		<script src="app/services/profilService.js"></script>
 
 		<script src="app/services/topics/topicService.js"></script>
-
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  		<script type="text/javascript" src="../js/soundcloud.player.api.js"></script>
+  		<script type="text/javascript" src="../js/sc-player.js"></script>
 
 
 	</body>
