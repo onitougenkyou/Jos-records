@@ -3,6 +3,8 @@ appchat.controller('conversationController', function($scope, conversationServic
   var id = $routeParams.id;
   var lastID = null;
   var done = false;
+  var user = localStorage.getItem('user');
+  user= JSON.parse(user);
   console.log(id);
 
   conversationService.getconversation(id).then(function(response)
@@ -27,7 +29,12 @@ appchat.controller('conversationController', function($scope, conversationServic
     {
       $scope.messages= response.data.messages;
     });
-  }, 10000);
+  }, 1000);
 
   }
+
+  $scope.f = function(id,user)
+  {
+     conversationService.SendMessage(id,user.id,$scope.dd).then(function(response){});};
+
 });
