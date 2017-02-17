@@ -11,12 +11,7 @@ appchat.controller('CreateConversationController', function($scope,$routeParams,
 		};
 
 		CreateConversationService.createConversation(user).then(function(response) {
-
-
-			var createConversation = {
-				id_sender: $scope.user_id_sender,
-				id_recipient: $scope.$user_id_recipient
-			}
-		})
+			console.log((response));
+		});
 	}
 });

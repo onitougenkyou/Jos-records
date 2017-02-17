@@ -1,20 +1,20 @@
-appchat.factory('CreateConversationService', function($http) {
+appchat.factory('CreateConversationService', function($http, $q) {
   var API = 'http://preprod.prokonect.fr/api';
 
-    var service = {
+  var service = {
+    createConversation: function(user) {
+      var deferred = $q.defer();
+      var url = API + "/conversations/create/" +user.recipient.id+ "/" +user.sender.id;
 
-        createConversation: function(user) {
-            var url = API + "/conversations/create/" +user.id.recipient+ "/" +user.id.sender;
-
-            $http.get(url)
-                .then(function(status) {
-
-                });
-
-
-        }
-    };
-
-    return service;
-
+      // console.log(user);
+      // console.log(user.recipient.id);
+      $http.get(url)
+      .then(function(data) {
+          service.response = data;
+          deferred.resolve(service.response);
+      });
+        return deferred.promise;
+    }
+  };
+  return service;
 });
