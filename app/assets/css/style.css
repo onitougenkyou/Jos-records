@@ -104,7 +104,9 @@ NAVIGATION (BURGER)
 	float:right; 
 }
 
-
+/*------------------------------------
+NAVIGATION (CONTENU BURGER)
+-------------------------------------*/
 
   .modal {
             left: 0;
@@ -114,8 +116,10 @@ NAVIGATION (BURGER)
 			position: fixed;
 			margin: 0 auto;
 			background: #fff;
-			padding: 25px;
+			padding: 45px;
 			z-index: 999;
+			font: 1rem  Rubik, Arial ,sans-serif;
+			list-style: none;
         }
         div.background {
             position: fixed;
@@ -173,7 +177,21 @@ body {
 	text-align: center;
 }
 
-
+input[type=text] {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 
 /*---------------------------------------
@@ -181,5 +199,6 @@ FOOTER
 ----------------------------------------*/
 
 .block-footer {
-	background: #16b84e;
+	background: #219F8B;
+	font: .6em  Bahiana, Arial ,sans-serif;
 }
