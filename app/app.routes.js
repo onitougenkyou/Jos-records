@@ -18,10 +18,10 @@ appchat.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/profil.html',
             controller: 'profilController'
         })
-        
-        .when('/CreatConversationView', {
-          templateUrl: 'app/views/CreatConversation/CreatConversationView.html',
-          controller: 'CreatConversationController'
+
+        .when('/conversation/messages/createView', {
+          templateUrl: 'app/views/conversation/createView.html',
+          controller: 'createController'
         })
 
         .when('/conversation/messages/:id', {
