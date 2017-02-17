@@ -60,11 +60,12 @@ HEADER
 }
 .block-header .title, .img {
 	display:inline;
+	max-width:190px;
 }
 
-.block-header .title .img {
+.block-header .title .img:hover {
 
-max-width:150px;
+max-width:190px;
 animation: App-logo-spin infinite 1s linear;
 }
 
