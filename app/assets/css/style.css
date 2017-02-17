@@ -1,46 +1,18 @@
 
 
-
 @import url('https://fonts.googleapis.com/css?family=Bahiana');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
 
 
 body {
-
-/* ------------------------------------------------
-Custom reset
--------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, ul, ol {
-  padding: 0;
-  margin: 0;
-  font-weight: normal;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-figure {
-  margin: 0;
-}
-
-
-body {k
-	background-image: url(../image/fond_music.jpg);
-	background-attachment:fixed;
-	background-repeat:no-repeat;
-
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 }
 
 div.logo {
+	padding: 25px;
 	text-align: center;
 }
 
@@ -59,7 +31,6 @@ HEADER
   	text-align: center;
 
 	color: black;
-
 	padding: 0.1em;
 }
 .block-header .title{
@@ -144,38 +115,6 @@ NAVIGATION
 	
 }
 
-	
-}
-
-.block-header .title .nom {
-	text-transform: uppercase;
-	font: bold 7rem comic;
-
-}
-
-/*----------------------------------------
-NAVIGATION
-----------------------------------------*/
-
-.block-nav .menu-nav {
-	background: black;
-}
-
-/*----------------------------------------
-BUTTON
-----------------------------------------*/
-
-
-.block-button {
-	text-align: right;
-	color: green;
-}
-.block-button button {
-	border: none;
-	margin: 5px;
-	padding: 5px;
-}
-
 
 .topbar {
 	background:#16b84e;
@@ -204,34 +143,6 @@ div.topbar div.container ul li a:active {
 
 div.clear {
 	clear: both;
-
-/*----------------------------------------
-MAIN
-----------------------------------------*/
-
-.block-article {
-	margin-top: 100px;
-	
-}
-
-.block-article1 .article1-title {
-	font: bold 3rem comic;
-}
-
-.block-article .txt1 {
-	font: bold 1 comic;
-	margin: 20px;
-	padding: 10px;
-	background: white;
-	color: grey;
-}
-
-.block-article .txt2 {
-	margin: 20px;
-	padding: 10px;
-	background: white;
-	color: grey;
-
 }
 
 div.pull-right {
@@ -241,7 +152,6 @@ div.pull-right {
 div.pull-left {
 	float: left;
 }
-
 
 /*----------------------------------------
 MAIN
@@ -262,4 +172,3 @@ FOOTER
 .block-footer {
 	background: #16b84e;
 }
-
