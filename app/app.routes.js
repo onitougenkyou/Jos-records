@@ -8,19 +8,38 @@ appchat.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/signup.html',
             controller: 'UserController'
         })
-        /*.when('/profiles', {
-            templateUrl: 'app/views/profil.html',
-            controller: 'SignupController'
-        })*/
 
+        .when('/login', {
+            templateUrl: 'app/views/login.html',
+            controller: 'UserController'
+        })
+
+        .when('/profiles', {
+            templateUrl: 'app/views/profil.html',
+            controller: 'profilController'
+        })
+        
         .when('/CreatConversationView', {
           templateUrl: 'app/views/CreatConversation/CreatConversationView.html',
           controller: 'CreatConversationController'
         })
 
-        .when('/chat/:id', {
-            templateUrl: 'app/views/chat.html',
-            controller: 'chatController'
+        .when('/conversation/messages/:id', {
+          templateUrl: 'app/views/chat.html',
+          controller: 'conversationController'
+        })
+
+        .when('/signup_success', {
+            templateUrl: 'app/views/signup_success.html'
+        })
+
+        .when('/login_success', {
+            templateUrl: 'app/views/login_success.html'
+        })
+
+        .when('/profil/:id', {
+            templateUrl: 'app/views/profil.html',
+            controller: 'profilController'
         })
 
         .otherwise({redirectTo : '/'})

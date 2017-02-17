@@ -1,12 +1,12 @@
-app.factory('AnnonceService', function($http, $q) {
+appchat.factory('conversationService', function($http, $q) {
 
     var API = 'http://preprod.prokonect.fr';
 
     var service = {
         response : false,
-        RefreshById: function(id) {
+        getconversation: function(id) {
             var deferred = $q.defer();
-            var url = API + "/api/conversations/messages/all/id" ;
+            var url = API + "/api/conversations/view/"+id ;
 
             $http.get(url)
             .then(function(data, status) {
