@@ -25,7 +25,7 @@ img {
 HEADER
 ----------------------------------------*/
 .block-header .logo {
-	background: #16b84e;
+	background: #219F8B;
 	font: 3rem  Bahiana, Arial ,sans-serif;
   	text-transform: uppercase;
   	text-align: center;
@@ -54,18 +54,18 @@ HEADER
 }
 
 .block-header span p2 {
-	background-color: yellow;
+	background-color: #ff5500;
 	font-size: 0.8em;
 	line-height: 12rem;
 }
 .block-header .title, .img {
 	display:inline;
-	max-width:190px;
+	max-width:170px;
 }
 
 .block-header .title .img:hover {
 
-max-width:190px;
+max-width:170px;
 animation: App-logo-spin infinite 1s linear;
 }
 
@@ -118,7 +118,7 @@ NAVIGATION
 
 
 .topbar {
-	background:#16b84e;
+	background:#219F8B;
 	padding: 15px;
 }
 
@@ -139,7 +139,7 @@ div.topbar div.container ul li a {
 }
 
 div.topbar div.container ul li a:active {
-	color: yellow;
+	color: #ff5500;
 }
 
 div.clear {
@@ -158,7 +158,7 @@ div.pull-left {
 MAIN
 ----------------------------------------*/
 body {
-	background: #16b84e;
+	background: #219F8B;
 	font: 2rem  Rubik, Arial ,sans-serif;
 	text-align: center;
 }
