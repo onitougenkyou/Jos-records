@@ -1,19 +1,11 @@
-appchat.controller('profilController', function($scope,$routeParams, CreateConversationService, topicService) {
+appchat.controller('profilController', function($scope,$routeParams, topicService) {
 
 	$scope.profil = function(id){
 		var user = {
 				id:id
 		};
 
-		CreateConversationService.createConversation(user).then(function(response) {
-
-
-			var profil = {
-				id: $scope.idl 
-			}
-		})
-	}
-
+}
 
 	var user = localStorage.getItem("user");
 	$scope.user = user = JSON.parse(user);
@@ -23,7 +15,7 @@ appchat.controller('profilController', function($scope,$routeParams, CreateConve
 		console.log(response);
 	});
 
-	
+
 
 
 

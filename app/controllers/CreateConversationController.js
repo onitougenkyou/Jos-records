@@ -1,4 +1,4 @@
-appchat.controller('CreateConversationController', function($scope,$routeParams, CreateConversationService) {
+appchat.controller('CreateConversationController', function($scope,$routeParams, conversationService) {
 
 	$scope.newConversation = function(id){
 		var user = {
@@ -10,8 +10,8 @@ appchat.controller('CreateConversationController', function($scope,$routeParams,
 			}
 		};
 
-		CreateConversationService.createConversation(user).then(function(response) {
-			console.log((response));
+		conversationService.create(user).then(function(response) {
+			console.log(response.data[0].conversation.id);
 		});
 	}
 });
