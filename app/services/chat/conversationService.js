@@ -16,6 +16,19 @@ appchat.factory('conversationService', function($http, $q) {
 
             return deferred.promise;
         },
+        create: function(user) {
+          var deferred = $q.defer();
+          var url = API + "/api/conversations/create/" +user.recipient.id+ "/" +user.sender.id;
+
+          // console.log(user);
+          // console.log(user.recipient.id);
+          $http.get(url)
+          .then(function(data) {
+              service.response = data;
+              deferred.resolve(service.response);
+          });
+            return deferred.promise;
+        },
         RefreshById: function(id) {
             var deferred = $q.defer();
             var url = API + "/api/conversations/messages/all/"+id ;
