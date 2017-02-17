@@ -5,20 +5,55 @@
 		<title>Jose records</title>
 		<meta charset="utf-8">
 
-		<link rel="stylesheet" type="text/css" href="app/assets/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="app/assets/css/bootstrap.min.css">-->
 		<link rel="stylesheet" type="text/css" href="app/assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 
 	</head>
 
 	<body ng-app="appchat" ng-controller="UserisLogged">
 
+		<div class="topbar">
+			<div class="container">
+				<ul class="pull -right">
+					<li>
+						<a href="">
+							Créer un compte
+						</a>
+					</li>
+					<li>
+						<a href="">
+							S'enregistrer
+						</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
 		<!-- appele header -->
 		<ng-header></ng-header>
 
 		<div class="container">
-			<div ng-view=""></div>
+			<div class="row">
+				<div ng-view=""></div>
+					<div class="main">
+					     <div class="col-xs-12">
+					          		<div class="text">
+						                <p>
+						                Partagez vos musiques
+						                </p>
+						                <img class="img" src="app/assets/image/Sans titre-1.jpg">
+						          </div>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
 		</div>
 
+
+		<!-- appele footer -->
+		<ng-footer></ng-footer>
 		<!-- AngularJS files -->
 		<script src="components/angular/angular.min.js"></script>
 		<script src="components/angular-route/angular-route.min.js"></script>
@@ -51,5 +86,6 @@
 		<script src="app/services/topics/topicService.js"></script>
 
 
+		
 	</body>
 </html>
