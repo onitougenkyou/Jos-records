@@ -64,9 +64,8 @@ HEADER
 }
 
 .block-header .title .img:hover {
-
-max-width:190px;
-animation: App-logo-spin infinite 1s linear;
+	max-width:190px;
+	animation: App-logo-spin infinite 1s linear;
 }
 
 
