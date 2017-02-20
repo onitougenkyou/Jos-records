@@ -4,6 +4,7 @@
 
 <!-- TEXT AREA -->
       <div class="block-button">
+
         
         <textarea class="textarea" ng-model = "newPost">
                             
@@ -11,6 +12,16 @@
 
         <button class="message" ng-click = "envoyer()">
           Envoyer
+        </button>
+
+        <div class="bouton-all-message" ng-controller ="viewController">
+          <button class="message" ng-click ="GetById()">
+            Message
+          </button>
+        </div>
+        <button class="modifier">
+          Modifier profil
+
         </button>
        
       </div>
