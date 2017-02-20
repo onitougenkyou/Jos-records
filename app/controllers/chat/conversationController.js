@@ -14,13 +14,20 @@ appchat.controller('conversationController', function($scope, conversationServic
   conversationService.getconversation(id).then(function(response)
   {
     $scope.messages= messages = response.data.messages;
-    for (var i = 0; i < messages.length; i++)
-    {
-      lastID = messages[i].id;
-    }
     console.log(response.data.messages);
-    console.log("id "+lastID);
-    done = true;
+
+    if(messages != undefined)
+    {
+
+      for (var i = 0; i < messages.length; i++)
+      {
+        lastID = messages[i].id;
+      }
+      console.log("id "+lastID);
+      done = true;
+    }
+
+
 
 
 
@@ -41,7 +48,7 @@ appchat.controller('conversationController', function($scope, conversationServic
 
   $scope.f = function(id,user)
   {
-
+    done=true;
     console.log("scope "+id);
     console.log("scope user id "+user.id);
     conversationService.SendMessage(id,user.id,$scope.dd).then(function(response){
