@@ -29,7 +29,7 @@ appchat.controller('profilController', function(
 
 		var newPost = {
 			userid: userjson.id,
-			contenu: $scope.newPost
+			contenu: $scope.contenupost
 		};
  		
  		profilService.newPost(newPost);
