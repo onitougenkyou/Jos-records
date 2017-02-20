@@ -1,6 +1,6 @@
 appchat.controller('viewController', function($scope, conversationService) {
 
-
+function vuConversation(){
 	var user = localStorage.getItem("user");
 	var userJson = JSON.parse(user);
 
@@ -8,4 +8,5 @@ appchat.controller('viewController', function($scope, conversationService) {
 			$scope.conversations = response.data;
 			console.log(response.data);
 		});
+	}
 	});
