@@ -41,13 +41,17 @@
               <div class="inner">
 
                 <h2 class="title">
-                  Actualier
+                  Actualités
                 </h2>
-
-                <p class="actu">
-                  
-                </p>
-
+                <div class="topics">
+                <table>
+                  <tr ng-repeat="topic in topics">
+                    <td>
+                      {{topic.content}}
+                    </td>
+                  </tr>
+                </table>
+                </div>
                 <img class="image-article1" src="app/assets/image/image1.jpg">
 
               </div>
@@ -59,7 +63,7 @@
               <div class="inner">
 
                 <h2 class="title">
-                  Detail du compte
+                  Détails du compte
                 </h2>
 
                 <ul class="detail">
@@ -81,13 +85,7 @@
                            
               <div class="inner">
  <!-- CONTENU DES PUBLICATIONS JIMMY -->
-              <table>
-                <tr ng-repeat="topic in topics">
-                  <td>
-                    {{topic.content}}
-                  </td>
-                </tr>
-              </table>
+
                 <!-- FIN PUBLICATIONS -->
 
                 
