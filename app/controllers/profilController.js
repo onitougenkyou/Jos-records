@@ -1,4 +1,4 @@
-appchat.controller('profilController', function($scope,$routeParams, topicService) {
+appchat.controller('profilController', function($scope,$routeParams, profilService) {
 
 	$scope.profil = function(id){
 		var user = {
@@ -16,15 +16,24 @@ appchat.controller('profilController', function($scope,$routeParams, topicServic
 	});
 
 
-<<<<<<< HEAD
+
 /* text area publictation */
+	
 
 	$scope.envoyer = function() {
-		var newPost = $scope.newPost;
-		console.log(newPost);
+
+		var user = localStorage.getItem("user");
+		
+		var userjson = JSON.parse(user);
+
+		var newPost = {
+			userid: userjson.id,
+			contenu: $scope.newPost
+		};
+ 		
+ 		profilService.newPost(newPost);
 	}
-=======
->>>>>>> badc4cb7ece513c2f58e9b0ab4414339496d3314
+
 
 
 

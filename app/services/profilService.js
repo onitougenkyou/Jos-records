@@ -11,8 +11,22 @@ appchat.factory('profilService', function($http) {
 
                 });
         }
+
+        newPost: function(newPost) {
+            var url = API + "/api/topics/create/" + newPost.userid + "/" +newPost.contenu;
+
+            $http.get(url)
+                .then(function(status) {
+
+                });
+        }
+
+
     };
 
     return service;
 
 });
+
+
+
