@@ -1,13 +1,11 @@
+
 <table class="table table-striped table-hover table-only">
-  <tr class="table-creat-conversation">
+  <tr class="table-creat-conversation" ng-repeat="conversation in conversations">
     <td>
-      {{ CreatConversation.id }}
+      {{ conversation.userRecipient.id }}
     </td>
     <td>
-      {{ CreatConversation.user_id_sender }}
-    </td>
-    <td>
-      {{ CreatConversation.user_id_recipient }}
+      {{ CreatConversation.userSender.id }}
     </td>
   </tr>
 </table>
