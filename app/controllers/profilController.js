@@ -1,19 +1,24 @@
 appchat.controller('profilController', function(
 	$scope,$routeParams,topicService,profilService) {
 
+    var user = localStorage.getItem("user");
+    $scope.user = JSON.parse(user);
+
+    profilService.retrieveTopics($scope.user.id).then(function (response) {
+        $scope.topics = response.data;
+    });
+
 	$scope.profil = function(id){
 		var user = {
 				id:id
 		};
 
-}
+};
 
-	var user = localStorage.getItem("user");
-	$scope.user = JSON.parse(user);
+
 
 	topicService.GetAll(user.id, 10).then(function(response) {
 
-		console.log(response);
 	});
 
 
@@ -24,7 +29,7 @@ appchat.controller('profilController', function(
 	$scope.envoyer = function() {
 
 		var user = localStorage.getItem("user");
-		
+
 		var userjson = JSON.parse(user);
 
 		var newPost = {
@@ -34,6 +39,8 @@ appchat.controller('profilController', function(
  		
  		profilService.newPost(newPost);
 	}
+
+
 
 
 

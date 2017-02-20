@@ -10,7 +10,7 @@
           Exprimez-vous
         </textarea>
 
-       
+
 
         <button class="message" ng-click = "envoyer()">
           Envoyer
@@ -80,19 +80,15 @@
             <article class="col-xs-12 article3">
                            
               <div class="inner">
-
-                <h2 class="title">
-                  Detail du compte
-                </h2>
-
-                <ul class="detail">
-
-                  <li> Pseudo : {{ user.pseudo }} </li>
-                  <li> Email : {{ user.email }} </li>
-                  <li> Firstname : {{ user.firstName }} </li>
-                  <li> Lastname : {{ user.lastName }} </li>
-
-                </ul>
+ <!-- CONTENU DES PUBLICATIONS JIMMY -->
+              <table>
+                <tr ng-repeat="topic in topics">
+                  <td>
+                    {{topic.content}}
+                  </td>
+                </tr>
+              </table>
+                <!-- FIN PUBLICATIONS -->
 
                 
 
