@@ -13,13 +13,15 @@ appchat.factory('profilService', function($http) {
         },
 
         newPost: function(newPost) {
-            var url = API + "/api/topics/create/" + newPost.userid + "/" +newPost.contenu;
+            var url = API + "/topics/create/" + newPost.userid + "/" +newPost.contenu;
 
             $http.get(url)
                 .then(function(status) {
 
                 });
         }
+
+        /*var valeur = jQuery(#champTexte).val();*/
 
 
     };

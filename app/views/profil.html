@@ -6,8 +6,8 @@
       <div class="block-button">
 
         
-        <textarea class="textarea" ng-model = "newPost">
-                            
+        <textarea name=champTexte id=champTexte rows=4 cols=50>
+          Exprimez-vous
         </textarea>
 
         <button class="message" ng-click = "envoyer()">
@@ -39,17 +39,12 @@
               <div class="inner">
 
                 <h2 class="title">
-                  Detail du compte
+                  Actualier
                 </h2>
 
-                <ul class="detail">
-
-                  <li> Pseudo : {{ user.pseudo }} </li>
-                  <li> Email : {{ user.email }} </li>
-                  <li> Firstname : {{ user.firstName }} </li>
-                  <li> Lastname : {{ user.lastName }} </li>
-
-                </ul>
+                <p class="actu">
+                  
+                </p>
 
                 <img class="image-article1" src="app/assets/image/image1.jpg">
 
@@ -97,7 +92,7 @@
 
                 </ul>
 
-                <img class="image-article3" src="app/assets/image/sans titre-1.jpg">
+                
 
               </div>
 
@@ -108,20 +103,16 @@
       </section>
 <!-- ASIDE CONTACT -->
           <aside class="block-contact">
-            <div class="button-contact">
-           
-              <div class="title">
-                <p>Liste de contact</p>
+            <div class="button-contact" ng-controller ="createController">
+                       
+              <button type="button" name="button" ng-click ="newConversation(2)">
+
+              Contater la personne
+              </button>
+
               </div>
+
           
-                <div class="button-contact" ng-controller ="CreateConversationController">
-
-                <button type="button" name="button" ng-click ="newConversation(2)">
-                  Contater la personne
-                </button>
-                </div>
-
-            </div>
           </aside>
 <!-- FIN ASIDE CONTACT -->
 
