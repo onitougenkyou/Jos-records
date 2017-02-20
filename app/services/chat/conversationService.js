@@ -44,6 +44,7 @@ appchat.factory('conversationService', function($http, $q) {
         GetById: function(id) {
           var deferred = $q.defer();
           var url = API + "/api/conversations/" + id;
+          
 
           $http.get(url)
           .then(function(data, status) {
