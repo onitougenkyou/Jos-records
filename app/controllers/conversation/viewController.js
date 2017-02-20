@@ -1,5 +1,6 @@
 appchat.controller('viewController', function($scope, conversationService) {
 
+
 	var user = localStorage.getItem("user");
 	var userJson = JSON.parse(user);
 

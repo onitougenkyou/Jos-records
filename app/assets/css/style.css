@@ -35,7 +35,7 @@ HEADER
 }
 .block-header .title{
 	line-height: 12rem;
-	
+
 }
 .block-header .title p1 {
 	font: 1.3em  Bahiana, Arial ,sans-serif;
@@ -102,7 +102,7 @@ NAVIGATION (BURGER)
 
 .burger {
 	width: 45px;
-	float:right; 
+	float:right;
 }
 
 /*------------------------------------
@@ -131,7 +131,7 @@ NAVIGATION (CONTENU BURGER)
             background: rgba(0,0,0,0.3);
         }
 
-	
+
 .topbar {
 	background:#219F8B;
 	padding: 15px;
@@ -143,7 +143,7 @@ div.topbar div.container ul li {
 }
 div.topbar div.container ul li :first-child{
 	margin-right: 25px;
-	
+
 }
 
 div.topbar div.container ul li a {
@@ -226,4 +226,9 @@ FOOTER
 .block-footer {
 	background: #219F8B;
 	font: .6em  Bahiana, Arial ,sans-serif;
+}
+
+/*-------------Vu conversation--------------*/
+.receveur {
+	text-align: left;
 }

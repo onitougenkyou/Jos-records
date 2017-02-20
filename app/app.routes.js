@@ -37,10 +37,17 @@ appchat.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/login_success.html'
         })
 
+
+        // .when('/conversation/messages/:id', {
+        //   templateUrl: 'app/views/conversation/viewConversation.html',
+        //   controller : 'viewController'
+        // })
+
         .when('/conversation/messages/:id', {
           templateUrl: 'app/views/conversation/viewConversation.html',
           controller : 'viewController'
         })
+
 
         .otherwise({redirectTo : '/'})
 });
