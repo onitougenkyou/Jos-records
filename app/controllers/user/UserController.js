@@ -23,6 +23,7 @@ appchat.controller('UserController', function($scope, $routeParams, $window, Use
 
             $scope.login = function () {
             var userlogin = {
+
                 mail: $scope.mail,
                 password: $scope.password
             };
