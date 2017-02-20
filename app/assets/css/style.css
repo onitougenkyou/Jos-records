@@ -35,7 +35,7 @@ HEADER
 }
 .block-header .title{
 	line-height: 12rem;
-	
+
 }
 .block-header .title p1 {
 	font: 1.3em  Bahiana, Arial ,sans-serif;
@@ -61,8 +61,9 @@ HEADER
 
 .block-header .title .img:hover {
 
-max-width:170px;
-animation: App-logo-spin infinite 1s linear;
+	max-width:190px;
+	animation: App-logo-spin infinite 1s linear;
+
 }
 
 
@@ -101,7 +102,7 @@ NAVIGATION (BURGER)
 
 .burger {
 	width: 45px;
-	float:right; 
+	float:right;
 }
 
 /*------------------------------------
@@ -130,7 +131,7 @@ NAVIGATION (CONTENU BURGER)
             background: rgba(0,0,0,0.3);
         }
 
-	
+
 .topbar {
 	background:#219F8B;
 	padding: 15px;
@@ -142,7 +143,7 @@ div.topbar div.container ul li {
 }
 div.topbar div.container ul li :first-child{
 	margin-right: 25px;
-	
+
 }
 
 div.topbar div.container ul li a {
@@ -179,8 +180,7 @@ body {
 
 input[type=text] {
     display: block;
-    width: 100%;
-    max-width: 150px;
+    width: 80%;
     margin: 0 auto;
     height: 34px;
     padding: 6px 12px;
@@ -193,6 +193,31 @@ input[type=text] {
     border-radius: 4px;
 }
 
+.formconnect input,
+.formconnect button {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.formconnect button {
+	width: 40%;
+	height: 25%;
+	background-color: #81b71a
+}
+.formconnect label {
+	color: white;
+}
+
 
 /*---------------------------------------
 FOOTER
@@ -201,4 +226,9 @@ FOOTER
 .block-footer {
 	background: #219F8B;
 	font: .6em  Bahiana, Arial ,sans-serif;
+}
+
+/*-------------Vu conversation--------------*/
+.receveur {
+	text-align: left;
 }
