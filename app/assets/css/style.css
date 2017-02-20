@@ -25,7 +25,7 @@ img {
 HEADER
 ----------------------------------------*/
 .block-header .logo {
-	background: #16b84e;
+	background: #219F8B;
 	font: 3rem  Bahiana, Arial ,sans-serif;
   	text-transform: uppercase;
   	text-align: center;
@@ -48,24 +48,22 @@ HEADER
 	top: 29px;
 }
 
-.block-header span {
-	margin-left: 5px;
-	padding-top: 16px;
-}
 
 .block-header span p2 {
-	background-color: yellow;
+	background-color: #ff5500;
 	font-size: 0.8em;
 	line-height: 12rem;
 }
 .block-header .title, .img {
 	display:inline;
-	max-width:190px;
+	max-width:170px;
 }
 
 .block-header .title .img:hover {
+
 	max-width:190px;
 	animation: App-logo-spin infinite 1s linear;
+
 }
 
 
@@ -82,42 +80,60 @@ ANIMATION HEADER
 
 
 /*----------------------------------------
-NAVIGATION
+NAVIGATION (BURGER)
 ----------------------------------------*/
 .block-header .navigation {
 	background: black ;
+	padding: 25px;
+}
+
+
+.burger span{
+
+	display: block;
+	background: white;
+	width: 100%;
+	height: 5px;
+	margin-bottom: 6px;
+
+
+}
+
+
+.burger {
+	width: 45px;
+	float:right; 
+}
+
+/*------------------------------------
+NAVIGATION (CONTENU BURGER)
+-------------------------------------*/
+
+  .modal {
+            left: 0;
+			right: 0;
+			top: 35%;
+			width: 150px;
+			position: fixed;
+			margin: 0 auto;
+			background: #fff;
+			padding: 45px;
+			z-index: 999;
+			font: 1rem  Rubik, Arial ,sans-serif;
+			list-style: none;
+        }
+        div.background {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+        }
+
 	
-
-}
-
-.block-header .navigation a {
-	color: white ;
-	text-decoration: none;
-}
-
-.navigation {
-	padding: 10px;
-}
-.navigation li {
-	display: inline-block;
-	font: 3rem  Rubik, Arial ,sans-serif;
-	text-transform: uppercase;
-	
-	margin-right: 5em;
-	margin-left: 5em;
-	border-top: white;
-	border-bottom: white;
-
-}
-.navigation li:hover{
-	font-size: 2rem;
-	box-sizing: border-box;
-	
-}
-
-
 .topbar {
-	background:#16b84e;
+	background:#219F8B;
 	padding: 15px;
 }
 
@@ -138,7 +154,7 @@ div.topbar div.container ul li a {
 }
 
 div.topbar div.container ul li a:active {
-	color: yellow;
+	color: #ff5500;
 }
 
 div.clear {
@@ -157,12 +173,26 @@ div.pull-left {
 MAIN
 ----------------------------------------*/
 body {
-	background: #16b84e;
+	background: #219F8B;
 	font: 2rem  Rubik, Arial ,sans-serif;
 	text-align: center;
 }
 
-
+input[type=text] {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 
 /*---------------------------------------
@@ -170,5 +200,6 @@ FOOTER
 ----------------------------------------*/
 
 .block-footer {
-	background: #16b84e;
+	background: #219F8B;
+	font: .6em  Bahiana, Arial ,sans-serif;
 }

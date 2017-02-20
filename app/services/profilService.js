@@ -10,7 +10,7 @@ appchat.factory('profilService', function($http) {
                 .then(function(status) {
 
                 });
-        }
+        },
 
         newPost: function(newPost) {
             var url = API + "/api/topics/create/" + newPost.userid + "/" +newPost.contenu;

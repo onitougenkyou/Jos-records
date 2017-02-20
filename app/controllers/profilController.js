@@ -1,4 +1,5 @@
-appchat.controller('profilController', function($scope,$routeParams, profilService) {
+appchat.controller('profilController', function(
+	$scope,$routeParams,topicService,profilService) {
 
 	$scope.profil = function(id){
 		var user = {
