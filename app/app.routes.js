@@ -38,11 +38,6 @@ appchat.config(function($routeProvider, $locationProvider) {
         })
 
 
-        // .when('/conversation/messages/:id', {
-        //   templateUrl: 'app/views/conversation/viewConversation.html',
-        //   controller : 'viewController'
-        // })
-
         .when('/conversation/:id', {
           templateUrl: 'app/views/conversation/viewConversation.html',
           controller : 'viewController'
